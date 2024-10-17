@@ -3,9 +3,9 @@ import 'package:yes_no_app/domain/entities/message.dart';
 
 class HerMessageBubble extends StatelessWidget {
 
-  Message message;
+  final Message message;
 
-  HerMessageBubble({
+  const HerMessageBubble({
     super.key,
     required this.message
   });
@@ -23,10 +23,10 @@ class HerMessageBubble extends StatelessWidget {
             color: colors.secondary, borderRadius: BorderRadius.circular(10),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
               message.text,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ),
         ),
@@ -41,9 +41,9 @@ class HerMessageBubble extends StatelessWidget {
 
 class _ImageBubble extends StatelessWidget {
 
-  String imageUrl;
+  final String imageUrl;
 
-  _ImageBubble({
+  const _ImageBubble({
     required this.imageUrl
   });
 

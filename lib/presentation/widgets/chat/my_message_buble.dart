@@ -3,9 +3,9 @@ import 'package:yes_no_app/domain/entities/message.dart';
 
 class MyMessageBuble extends StatelessWidget {
 
-  Message message;
+  final Message message;
 
-  MyMessageBuble({super.key, 
+  const MyMessageBuble({super.key, 
     required this.message
   });
 

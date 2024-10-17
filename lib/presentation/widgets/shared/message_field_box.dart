@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class MessageFieldBox extends StatelessWidget {
   
-  ValueChanged<String> onNewMessage;
+  final ValueChanged<String> onNewMessage;
   
-  MessageFieldBox({
+  const MessageFieldBox({
     super.key,
     required this.onNewMessage
   });
